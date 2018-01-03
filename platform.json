@@ -16,11 +16,12 @@
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "http://dl.platformio.org/packages/manifest.json",
-    "https://raw.githubusercontent.com/eerimoq/simba/master/make/platformio/manifest.json"
+    "https://raw.githubusercontent.com/eerimoq/simba/master/make/platformio/manifest.json",
+    "https://pral2a.github.io/platformio-packages/manifest.json"
   ],
   "frameworks": {
     "arduino": {
-      "package": "framework-arduinosam",
+      "package": "framework-arduinosam-sck",
       "script": "builder/frameworks/arduino.py"
     },
     "mbed": {
@@ -37,10 +38,15 @@
       "type": "toolchain",
       "version": ">=1.40803.0,<1.40805.0"
     },
-    "framework-arduinosam": {
+    "framework-arduinosam-sck": {
       "type": "framework",
       "optional": true,
-      "version": "~2.10616.1"
+      "version": "~2.10616.2"
+    },
+    "framework-sck20": {
+      "type": "framework",
+      "optional": true,
+      "version": "~1"
     },
     "framework-mbed": {
       "type": "framework",
